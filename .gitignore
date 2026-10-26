@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Native/PyTorch extension builds
+build/
+dist/
+*.so
+*.o
+*.a
+.ninja_deps
+.ninja_log
+
+# Profiling artifacts (keep small, reviewed summaries in results/)
+artifacts/
+profiles/**/*.ncu-rep
+profiles/**/*.nsys-rep
+profiles/**/*.sqlite
+
+# Editor and local environment
+.venv/
+.env
+.vscode/*.log
+.vscode

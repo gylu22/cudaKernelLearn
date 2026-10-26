@@ -1,0 +1,22 @@
+[build-system]
+requires = [
+    "setuptools>=68",
+    "wheel",
+    "torch",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cuda-kernel-lab"
+version = "0.2.0"
+description = "A learning lab for CUDA kernels, correctness, benchmarking, and profiling"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["torch"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
